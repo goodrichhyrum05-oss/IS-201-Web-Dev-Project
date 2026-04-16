@@ -1,0 +1,107 @@
+body {
+    background-color: #dceeff;
+    font-family: Georgia, serif;
+    color: #1a1a2e;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #1a4f8a;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #1a4f8a;
+    border-bottom: 2px solid #1a4f8a;
+    padding-bottom: 0.3rem;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #222222;
+}
+
+#header-div {
+    background-color: #1a4f8a;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#header-div h1 {
+    color: white;
+    padding-top: 0;
+}
+
+#header-div p {
+    color: #cce0ff;
+    font-size: 1.1rem;
+}
+
+#content-div {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+#images-div {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+#images-div img {
+    width: 380px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #1a4f8a;
+}
+
+#video-div {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#lists-div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    border: 1px solid #b6d0ff;
+}
+
+#nav-div {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a4f8a;
+    margin-top: 2rem;
+}
+
+#nav-div a {
+    color: white;
+    margin: 0 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+#nav-div a:hover {
+    background-color: white;
+    color: #1a4f8a;
+}
+
+.anchor-link {
+    color: #1a4f8a;
+    font-weight: bold;
+}

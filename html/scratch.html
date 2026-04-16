@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Jays - My Scratch Page</title>
+  <link rel="stylesheet" href="../styles/scratch.css">
+</head>
+<body>
+
+  <!-- Header Div -->
+  <div id="header-div">
+    <h1>Blue Jays</h1>
+    <p>My favorite bird &mdash; bold, beautiful, and brilliant</p>
+    <p><a href="#video-section" class="anchor-link" style="color:#cce0ff;">&#8595; Watch a Video</a></p>
+  </div>
+
+  <!-- Main Content Div -->
+  <div id="content-div">
+
+    <!-- About Section -->
+    <h2>About the Blue Jay</h2>
+    <p>
+      The Blue Jay (<em>Cyanocitta cristata</em>) is one of North America's most recognizable birds.
+      Known for their striking blue, white, and black plumage, Blue Jays are intelligent, social,
+      and surprisingly complex creatures. They are members of the Corvidae family, making them
+      relatives of crows and ravens.
+    </p>
+
+    <!-- Images Div -->
+    <div id="images-div">
+      <img src="../images/Blue_jay1.jpg" alt="Blue Jay perched on a branch">
+      <img src="../images/blue_jay2.jpg" alt="Blue Jay on a rock">
+    </div>
+
+    <!-- Lists Div -->
+    <div id="lists-div">
+      <h2>Blue Jay Facts</h2>
+      <ol>
+        <li>Appearance
+          <ul>
+            <li>Vibrant blue feathers on wings and tail</li>
+            <li>White and black markings on the face and wings</li>
+            <li>Distinctive blue crest on top of the head</li>
+          </ul>
+        </li>
+        <li>Behavior
+          <ul>
+            <li>Highly intelligent and known to use tools</li>
+            <li>Mimic the calls of hawks to scare away other birds</li>
+            <li>Mate for life and are very loyal partners</li>
+          </ul>
+        </li>
+        <li>Diet
+          <ul>
+            <li>Acorns are their favorite food</li>
+            <li>Also eat insects, seeds, and berries</li>
+            <li>Known to store food for winter</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Video Section -->
+    <div id="video-div">
+      <h2 id="video-section">Blue Jay Video</h2>
+      <p>Watch this fascinating video about Blue Jays in the wild:</p>
+      <iframe width="700" height="394"
+        src="https://www.youtube.com/embed/kzid9RMsw3M"
+        title="Blue Jay Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Tableau Section -->
+    <div id="tableau-div">
+      <h2>Blue Jay Data Dashboard</h2>
+      <p>An interactive Tableau visualization showing the relationship between head length and body mass in Blue Jays:</p>
+      <div class='tableauPlaceholder' id='viz1776318537695' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Vi/VisualizationforTheRelationship/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='VisualizationforTheRelationship/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Vi/VisualizationforTheRelationship/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1776318537695');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.width = '1024px';
+          vizElement.style.height = '795px';
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.width = '1024px';
+          vizElement.style.height = '795px';
+        } else {
+          vizElement.style.width = '100%';
+          vizElement.style.height = '1427px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+  </div>
+
+  <!-- Navigation Div -->
+  <div id="nav-div">
+    <a href="../index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="riddle.html">Riddle Generator</a>
+  </div>
+
+</body>
+</html>

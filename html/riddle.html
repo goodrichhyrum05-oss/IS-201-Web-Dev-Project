@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Riddle Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f4f8;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 { color: #333; }
+    #riddle-text { font-size: 1.2rem; margin: 1.5rem 0; min-height: 60px; }
+    #answer-text { font-size: 1rem; color: #555; min-height: 30px; }
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    button:hover { background-color: #357abd; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Riddle Generator</h1>
+    <p id="riddle-text">Click the button to get a riddle!</p>
+    <button onclick="newRiddle()">New Riddle</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="answer-text"></p>
+  </div>
+  <script>
+    var riddles = [
+      { q: "I have hands but cannot clap. What am I?", a: "A clock" },
+      { q: "The more you take, the more you leave behind. What am I?", a: "Footsteps" },
+      { q: "I speak without a mouth and hear without ears. What am I?", a: "An echo" },
+      { q: "What has keys but no locks, space but no room?", a: "A keyboard" },
+      { q: "I am tall when I am young and short when I am old. What am I?", a: "A candle" }
+    ];
+    var current = 0;
+    function newRiddle() {
+      current = Math.floor(Math.random() * riddles.length);
+      document.getElementById('riddle-text').textContent = riddles[current].q;
+      document.getElementById('answer-text').textContent = '';
+    }
+    function showAnswer() {
+      document.getElementById('answer-text').textContent = 'Answer: ' + riddles[current].a;
+    }
+  </script>
+</body>
+</html>
